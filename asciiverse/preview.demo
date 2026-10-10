@@ -1,0 +1,15 @@
+# Gorched catalog preview: the script behind asciiverse/gorched.cast.
+# Play it with: gorched --seed 42 --width 100 --height 30 --demo asciiverse/preview.demo
+# Shots are tuned to seed 42 at 100x30 and miss at any other size.
+wait 1.5; hideMessageBox; wait 0.8
+# round 1: a short shot from each side, then red finds the range
+setAngle 45; wait 0.4; shoot 21; waitForFinishTurn; wait 0.8
+setAngle 135; wait 0.4; shoot 22; waitForFinishTurn; wait 0.8
+setAngle 45; wait 0.4; shoot 25; waitForFinishTurn; wait 2.5
+# score board, then the attributes form
+hideMessageBox; wait 2.0; hideMessageBox; wait 0.3
+# round 2 on new terrain: red falls short, blue evens the score
+nextRound; wait 1.0
+setAngle 45; wait 0.4; shoot 18; waitForFinishTurn; wait 0.8
+setAngle 135; wait 0.4; shoot 26; waitForFinishTurn; wait 3.5
+exit
