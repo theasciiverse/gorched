@@ -6,9 +6,6 @@
 > av play gorched
 > ```
 >
-> Or download the archive for your system from this repository's Releases,
-> unpack it and run `./gorched` (`gorched.exe` on Windows).
->
 > The original README follows.
 
 # Gorched
